@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&family=Roboto:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@500&family=Roboto:wght@400;700&display=swap'); */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: cursive;
 }
 body,html{
     height: 100vh;
@@ -19,7 +20,7 @@ main
     justify-content: center;
 }
 .game{
-    height: 80%;
+    height: 90%;
     width: 35vw;
     /* padding: 40px; */
     display: flex;
@@ -36,22 +37,26 @@ nav{
     width: 100%;
     height: 60px;
     font-size: 22px;
-    background-color: rgb(5, 155, 5);
+    /* background-image: linear-gradient(to top right, rgb(1, 33, 1) , rgb(5, 155, 5)); */
+    background-image: linear-gradient(to bottom right,rgb(5, 155, 5) , rgb(8, 103, 8) );
     
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 nav h1{
     margin: 0 60px;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .js-guess-result{
     height: 700px;
     width: 74%;
-    font-size: 25px;
-    color: rgb(6, 218, 6);
+    font-size: 29px;
+    color: black;
     border: 1px solid white;
+    
 }
 .game-container{
     width: 100%;
@@ -98,16 +103,25 @@ button{
     /* color: rgb(225, 140, 225);
     background-color: rgb(254, 236, 254);*/
     color: green;
-        border: 2px solid darkgreen; 
+    border: 2px solid darkgreen; 
 }
-
-#js-level{
+.gameInfo{
     color: white;
 }
-
+#js-level{
+    text-align: right;
+}
+#js-attempts{
+   display: flex;
+   justify-content: right;
+}
+#js-reset{
+    width: 12vw;
+    height: 3.5vw;
+}
 @media (max-width: 1111px) {
     .game{
-        height: 80%;
+        height: 100%;
         width: 80vw;
         /* padding: 2px; */
     
@@ -123,7 +137,7 @@ button{
     }
     button{
         width: 17vw;
-        height: 7vw;
+        height: 6vw;
         font-weight: 700;
         font-size: 30px;
         margin: 0 6px;
@@ -133,11 +147,16 @@ button{
         border: 2px solid black; 
         background-color: white;
     }
+    #js-reset{
+        /* font-size: 18px; */
+        width: 35vw;
+        height: 4vw;
+    }
 }
 
 @media (max-width: 650px) {
     .game{
-        height:  80%;
+        height:  100%;
         width: 100vw;
         /* padding: 2px; */
     
@@ -166,7 +185,7 @@ button{
     }
     button{
         width: 28vw;
-        height: 13vw;
+        height: 11vw;
         font-weight: 700;
         font-size: 30px;
         margin: 0 4px;
@@ -174,6 +193,11 @@ button{
         border-radius: 10px;
         cursor: pointer;
         border: 2px solid black; 
+    }
+    #js-reset{
+        /* font-size: 18px; */
+        width: 40vw;
+        height: 10vw;
     }
 }
 #level1{
@@ -195,9 +219,13 @@ button{
         width: 100%;
     }
     nav{
-        font-size: 5.1vw;
+        font-size: 4.5vw;
  
     }
+   nav h1{
+        margin-right: 23px;
+   }
+
     input {
         margin: 11px 0;
         margin-bottom: 22px;
@@ -211,11 +239,11 @@ button{
     .js-guess-result {
         height: 700px;
         width: 74%;
-        font-size: 13px;
+        font-size: 16px;
         border: 1px solid white;
     }
     button{
-        width: 25vw;
+        width: 25.5vw;
         height: 13vw;
         font-weight: 700;
         font-size: 18px;
@@ -225,6 +253,11 @@ button{
         cursor: pointer;
         color: green;
         border: 2px solid darkgreen; 
+    }
+    #js-reset{
+        font-size: 18px;
+        width: 38vw;
+        height: 13vw;
     }
 
 }
